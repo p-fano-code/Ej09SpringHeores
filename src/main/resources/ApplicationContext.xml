@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+	<bean id="heore1" class="superheroes.SuperHeroe" scope="singleton">
+		<property name="id" value="0"></property>
+		<property name="nombre" value="batman"></property>
+		<property name="poder" value="1"></property>
+		<property name="nombrePoder" value="vision laser"></property>
+	</bean>
+	<bean id="heore2" class="superheroes.SuperHeroe" scope="singleton">
+		<property name="id" value="2"></property>
+		<property name="nombre" value="superman"></property>
+		<property name="poder" value="2"></property>
+		<property name="nombrePoder" value="volar"></property>
+	</bean>
+	<bean id="heore3" class="superheroes.SuperHeroe" scope="singleton">
+		<property name="id" value="3"></property>
+		<property name="nombre" value="aquaman"></property>
+		<property name="poder" value="3"></property>
+		<property name="nombrePoder" value="nado rapido"></property>
+	</bean>
+	
+	<bean id="heroePoder100" class="superheroes.SuperHeroe" scope="prototype">
+		<property name="poder" value="100"></property>		
+	</bean>
+	<bean id="heroeVolador" class="superheroes.SuperHeroe" scope="prototype">
+		<property name="nombrePoder" value="volar"></property>
+	</bean>
+	
+	
+</beans>
